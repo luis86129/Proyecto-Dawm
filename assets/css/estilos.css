@@ -11,7 +11,19 @@
 	--espacio-grande: 32px;
 }
 
+/* Fondo de la página */
 body {
 	background-color: var(--color-primario);
 	background-image: linear-gradient(45deg, var(--color-acento) 15%, var(--color-primario) 85%);
+}
+
+/* Navegación: enlace activo y hover */
+#nav ul li a.active {
+	background-color: var(--color-acento);
+	color: var(--color-superficie);
+}
+
+#nav ul li a:hover {
+	background-color: var(--color-secundario);
+	color: var(--color-superficie);
 }
