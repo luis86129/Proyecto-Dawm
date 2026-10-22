@@ -1,2 +1,12 @@
 /* Personalización de la plantilla para el proyecto.
    Se carga después de main.css, por eso sus reglas tienen prioridad. */
+:root {
+	--color-primario: #0b3c6f;
+	--color-secundario: #1b6aa5;
+	--color-acento: #4fb3e8;
+	--color-superficie: #ffffff;
+	--color-texto-suave: #66727c;
+	--radio: 10px;
+	--espacio-medio: 16px;
+	--espacio-grande: 32px;
+}
