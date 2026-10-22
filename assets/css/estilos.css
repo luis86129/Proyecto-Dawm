@@ -37,3 +37,10 @@ body {
 	background-color: var(--color-acento);
 	color: var(--color-superficie) !important;
 }
+
+/* Foco visible para quien navega con teclado */
+#nav a:focus-visible,
+.button:focus-visible {
+	outline: 3px solid var(--color-acento);
+	outline-offset: 2px;
+}
