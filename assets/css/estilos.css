@@ -27,3 +27,13 @@ body {
 	background-color: var(--color-secundario);
 	color: var(--color-superficie);
 }
+
+/* Botones */
+.button {
+	border-radius: var(--radio);
+}
+
+.button:hover {
+	background-color: var(--color-acento);
+	color: var(--color-superficie) !important;
+}
