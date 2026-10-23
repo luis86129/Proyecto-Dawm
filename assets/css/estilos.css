@@ -53,14 +53,17 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 p { font-family: var(--fuente-cuerpo) !important; }
 
 
-
-/* Fondo de la página */
+/* =============================================
+   FONDO DE PÁGINA
+   ============================================= */
 body {
 	background-color: var(--color-primario);
 	background-image: linear-gradient(45deg, var(--color-acento) 15%, var(--color-primario) 85%);
 }
 
-/* Navegación: enlace activo y hover */
+/* =============================================
+   NAVEGACIÓN
+   ============================================= */
 #nav ul li a.active {
 	background-color: var(--color-acento);
 	color: var(--color-superficie);
@@ -71,7 +74,9 @@ body {
 	color: var(--color-superficie);
 }
 
-/* Botones */
+/* =============================================
+   BOTONES
+   ============================================= */
 .button {
 	border-radius: var(--radio);
 }
@@ -88,15 +93,43 @@ body {
 	outline-offset: 2px;
 }
 
+/* =============================================
+   IMÁGENES — Hero (spotlight)
+   ============================================= */
 .image {
-    border-radius: 0 !important;
-    border: 1px solid var(--color-primario)!important;
-	width: 420px !important;
-	height: 300px !important;
+	border-radius: var(--radio) !important;
+	border: 2px solid var(--color-borde) !important;
+	overflow: hidden;
 }
+
 .image img {
-        border-radius: 0 !important;
-		width: 100% !important;
-		height: 100% !important;
-		object-fit: cover !important; /* Ajusta la imagen para cubrir todo el contenedor */
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover !important;
+	border-radius: 0 !important;
+}
+
+/* =============================================
+   IMÁGENES — Secciones (figure)
+   ============================================= */
+.imagen-seccion {
+	margin: var(--espacio-grande) auto;
+	max-width: 700px;
+	text-align: center;
+}
+
+.imagen-seccion img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border-radius: var(--radio);
+	border: 2px solid var(--color-borde);
+	box-shadow: var(--sombra);
+}
+
+.imagen-seccion figcaption {
+	margin-top: var(--espacio-pequeno);
+	color: var(--color-texto-suave);
+	font-size: 0.9rem;
+	font-style: italic;
 }
