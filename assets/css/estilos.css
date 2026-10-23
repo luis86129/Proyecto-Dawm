@@ -68,18 +68,22 @@ p {
 	font-family: var(--fuente-cuerpo) !important;
 }
 
-
 /* =============================================
    FONDO DE PÁGINA
    ============================================= */
 body {
 	background-color: var(--color-primario);
-	background-image: linear-gradient(45deg, var(--color-acento) 15%, var(--color-primario) 85%);
+	background-image: linear-gradient(135deg, #061d38 0%, var(--color-primario) 40%, var(--color-secundario) 100%);
+	background-attachment: fixed;
 }
 
 /* =============================================
    NAVEGACIÓN
    ============================================= */
+#nav ul li a {
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 #nav ul li a.active {
 	background-color: var(--color-acento);
 	color: var(--color-superficie);
@@ -95,11 +99,13 @@ body {
    ============================================= */
 .button {
 	border-radius: var(--radio);
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 .button:hover {
 	background-color: var(--color-acento);
 	color: var(--color-superficie) !important;
+	transform: translateY(-2px);
 }
 
 /* Foco visible para quien navega con teclado */
@@ -107,6 +113,53 @@ body {
 .button:focus-visible {
 	outline: 3px solid var(--color-acento);
 	outline-offset: 2px;
+}
+
+/* =============================================
+   SECCIONES — Bordes superiores por ID
+   ============================================= */
+#inicio {
+	border-top: 4px solid var(--color-acento);
+}
+
+#sobre-desfile {
+	border-top: 4px solid var(--color-secundario);
+}
+
+#comunidad {
+	border-top: 4px solid var(--color-acento);
+}
+
+#impacto {
+	border-top: 4px solid var(--color-secundario);
+}
+
+#vision {
+	border-top: 4px solid var(--color-acento);
+}
+
+/* =============================================
+   SECCIONES — Tarjetas de features
+   ============================================= */
+.features li,
+.features article {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features li:hover,
+.features article:hover {
+	transform: translateY(-4px);
+	box-shadow: var(--sombra);
+}
+
+/* Iconos dentro de features */
+.icon.major {
+	transition: transform 0.3s ease;
+}
+
+.features li:hover .icon.major,
+.features article:hover .icon.major {
+	transform: scale(1.1);
 }
 
 /* =============================================
@@ -141,6 +194,12 @@ body {
 	border-radius: var(--radio);
 	border: 2px solid var(--color-borde);
 	box-shadow: var(--sombra);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen-seccion img:hover {
+	transform: scale(1.02);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .imagen-seccion figcaption {
@@ -159,4 +218,55 @@ body {
 .meta {
 	color: var(--color-texto-suave) !important;
 	font-size: 0.95rem;
+}
+
+/* =============================================
+   FOOTER — Mejoras visuales
+   ============================================= */
+#footer {
+	border-top: 3px solid var(--color-acento);
+}
+
+#footer h2 {
+	color: var(--color-superficie) !important;
+	font-size: 1.4rem;
+}
+
+#footer p,
+#footer dd {
+	color: rgba(255, 255, 255, 0.8) !important;
+}
+
+#footer dt {
+	color: var(--color-acento) !important;
+	font-weight: 600;
+}
+
+.copyright {
+	font-size: 0.85rem;
+	opacity: 0.7;
+}
+
+/* =============================================
+   ENLACES — Transiciones globales
+   ============================================= */
+a {
+	transition: color 0.3s ease;
+}
+
+/* =============================================
+   HEADER — Tipografía mejorada
+   ============================================= */
+#header h1 {
+	font-family: var(--fuente-titulo) !important;
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: -0.03em;
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#header p {
+	font-family: var(--fuente-cuerpo) !important;
+	font-size: 1.1rem;
+	opacity: 0.9;
 }
