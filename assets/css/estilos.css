@@ -1,15 +1,58 @@
 /* Personalización de la plantilla para el proyecto.
    Se carga después de main.css, por eso sus reglas tienen prioridad. */
+
+/* =============================================
+   VARIABLES GLOBALES
+   ============================================= */
 :root {
 	--color-primario: #0b3c6f;
 	--color-secundario: #1b6aa5;
 	--color-acento: #4fb3e8;
 	--color-superficie: #ffffff;
+	--color-texto: #1a2b3c;
 	--color-texto-suave: #66727c;
+	--color-borde: #d0dce8;
 	--radio: 10px;
+	--sombra: 0 4px 18px rgba(0, 0, 0, 0.12);
+	--espacio-pequeno: 8px;
 	--espacio-medio: 16px;
 	--espacio-grande: 32px;
+	--ancho-maximo: 1100px;
+	--fuente-titulo: 'Outfit', sans-serif;
+	--fuente-cuerpo: 'Inter', sans-serif;
 }
+
+/* =============================================
+   MODELO DE CAJA UNIVERSAL
+   ============================================= */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/* =============================================
+   TIPOGRAFÍA
+   ============================================= */
+body {
+	font-family: var(--fuente-cuerpo) !important;
+	font-size: 1rem;
+	line-height: 1.7;
+	color: var(--color-texto);
+}
+
+h1, h2, h3, h4 {
+	font-family: var(--fuente-titulo) !important;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	line-height: 1.2;
+}
+
+h1 { font-size: 2.6rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.2rem; font-weight: 600; }
+
+p { font-family: var(--fuente-cuerpo) !important; }
+
+
 
 /* Fondo de la página */
 body {
