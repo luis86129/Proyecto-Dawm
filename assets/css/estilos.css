@@ -25,7 +25,9 @@
 /* =============================================
    MODELO DE CAJA UNIVERSAL
    ============================================= */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 }
 
@@ -39,18 +41,32 @@ body {
 	color: var(--color-texto);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
 	font-family: var(--fuente-titulo) !important;
 	font-weight: 700;
 	letter-spacing: -0.02em;
 	line-height: 1.2;
 }
 
-h1 { font-size: 2.6rem; }
-h2 { font-size: 1.8rem; }
-h3 { font-size: 1.2rem; font-weight: 600; }
+h1 {
+	font-size: 2.6rem;
+}
 
-p { font-family: var(--fuente-cuerpo) !important; }
+h2 {
+	font-size: 1.8rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+p {
+	font-family: var(--fuente-cuerpo) !important;
+}
 
 
 /* =============================================
@@ -114,7 +130,7 @@ body {
    ============================================= */
 .imagen-seccion {
 	margin: var(--espacio-grande) auto;
-	max-width: 700px;
+	max-width: 750px;
 	text-align: center;
 }
 
@@ -132,4 +148,15 @@ body {
 	color: var(--color-texto-suave);
 	font-size: 0.9rem;
 	font-style: italic;
+}
+
+.imagen-hero img {
+	max-height: 400px;
+	object-fit: cover;
+	width: 100%;
+}
+
+.meta {
+	color: var(--color-texto-suave) !important;
+	font-size: 0.95rem;
 }
