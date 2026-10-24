@@ -269,8 +269,56 @@ a {
 	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-#header p {
-	font-family: var(--fuente-cuerpo) !important;
-	font-size: 1.1rem;
-	opacity: 0.9;
+.GaleriaBt {
+	display: block;
+	width: fit-content;       /* Ajusta el ancho al texto (o puedes usar un ancho fijo como 200px) */
+	margin: 20px auto;        /* 'auto' en los lados izq/der es lo que centra el botón */
+
+	background-color: var(--color-acento); /* Color de fondo inicial (Azul) */
+	color: var(--color-superficie);            /* Color de texto */
+	border-radius: var(--radio);        /* Bordes redondeados */
+	padding: 12px 24px;        /* Espaciado interno (arriba/abajo izq/der) */
+	text-decoration: none;     /* Quita el subrayado por defecto del enlace */
+	text-align: center;
+	font-weight: bold;
+
+	transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.1s ease;
+}
+
+.GaleriaBt:hover {
+	background-color: var(--color-primario); /* Color más oscuro al pasar el ratón */
+	color: var(--color-superficie) !important;
+}
+
+.GaleriaBt:active {
+	transform: scale(0.98);
+	color: var(--color-superficie) !important;
+
+}
+
+.Articulobt {
+	display: block;
+	width: fit-content;       /* Ajusta el ancho al texto (o puedes usar un ancho fijo como 200px) */
+	margin: 20px auto;        /* 'auto' en los lados izq/der es lo que centra el botón */
+
+	background-color: var(--color-acento); /* Color de fondo inicial (Azul) */
+	color: var(--color-superficie);            /* Color de texto */
+	border-radius: var(--radio);        /* Bordes redondeados */
+	padding: 12px 24px;        /* Espaciado interno (arriba/abajo izq/der) */
+	text-decoration: none;     /* Quita el subrayado por defecto del enlace */
+	text-align: center;
+	font-weight: bold;
+
+	transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.1s ease;
+}
+
+.Articulobt:hover {
+	background-color: var(--color-primario); /* Color más oscuro al pasar el ratón */
+	color: var(--color-superficie) !important;
+}
+
+.Articulobt:active {
+	transform: scale(0.98);
+	color: var(--color-superficie) !important;
+
 }
