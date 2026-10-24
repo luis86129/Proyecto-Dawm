@@ -151,6 +151,12 @@ body {
 	transform: translateY(-4px);
 	box-shadow: var(--sombra);
 }
+.features article{
+	padding-top: 10px;
+}
+.features li{
+	padding-top: 10px;
+}
 
 /* Iconos dentro de features */
 .icon.major {
@@ -159,7 +165,7 @@ body {
 
 .features li:hover .icon.major,
 .features article:hover .icon.major {
-	transform: scale(1.1);
+	transform: scale(1.01);
 }
 
 /* =============================================
