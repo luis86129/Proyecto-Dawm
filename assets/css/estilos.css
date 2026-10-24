@@ -229,9 +229,7 @@ body {
 /* =============================================
    FOOTER — Mejoras visuales
    ============================================= */
-#footer {
-	border-top: 3px solid var(--color-acento);
-}
+
 
 #footer h2 {
 	color: var(--color-superficie) !important;
